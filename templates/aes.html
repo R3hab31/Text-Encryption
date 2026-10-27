@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AES Encryption</title>
+<link
+rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<a href="/"><button> ←Home</button></a>
+<h1>AES Encryption</h1>
+<form method="POST"> 
+    <input type="text" name="message" placeholder="Enter text to encrypt">>
+    <br><br>
+    <button>Encrypt</button>
+    </form>
+    {% if output %}
+    <div class="output">
+    <h3>encrypted output</h3>
+    <p>{{output}}</p>
+    </div>
+    {% endif %}
+    </body>
+    </html>

@@ -1,0 +1,49 @@
+body{
+    background:#111827;
+    color:white;
+    font-family: Calibri;
+    text-align: center;
+    padding-top: 120px;
+}
+button{
+    padding:20px;
+    width:180px;
+    height:60px;
+    font-size:24px;
+    margin:15px;
+    border-radius:15px;
+    cursor: pointer;
+    transition: 0.3s;
+}   
+button:hover{
+    transform: scale(1.2 );
+    background: #3b82f6;
+    color: white;
+}
+input[type="text"]{
+    width: 500px;
+    height: 20px;
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+}
+input[type="radio"]{
+    transform: scale(2);
+    margin: 10px;
+    cursor: pointer;
+}
+label{
+    font-size: 24px;
+    cursor: pointer;
+}
+.output{
+    width:95%;
+    margin: auto;
+    margin-top: 40px;
+    padding: 20px;
+    background: #1f2937;
+    border-radius: 15px;
+    word-wrap: break-word;
+    user-select: all;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Encryption Visualizer</title>
+<h1>
+    <p>Encryption Algorithms Demonstrator</p>
+    <p>RSA • AES • DES • Hybrid Encryption</p>
+    <p>Built using Flask + Python</p>
+</h1>
+<link 
+rel="stylesheet" 
+href="{{ url_for('static',filename='style.css')}}">
+</head>
+<body>
+<div class="container">
+<h1>Encryption Visualizer </h1>
+<p>Explore RSA, DES, AES and Hybrid Encryption</p>
+<div class="button">
+<a href="/rsa"> <button>RSA</button> </a>
+<a href="/des"> <button>DES</button> </a>
+<a href="/aes"> <button>AES</button> </a>
+<a href="/hybrid"> <button>Hybrid</button> </a>
+</div>
+</div>
+</head>
+</body>
+</html>

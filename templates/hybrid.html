@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Hybrid Encryption</title>
+<link
+rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<a href="/"><button> ←Home</button></a>
+{% if error %}
+<p>{{ error }}</p>
+{% endif %}
+<form method="POST">
+<input type="text" name="message" placeholder="Enter text to encrypt">>
+<br><br>
+<input type="radio" id="aes" name="algo" value="AES">
+<label for="aes">AES+RSA     </label><br>
+<input type="radio" id="des" name="algo" value="DES">
+<label for="des">DES+RSA     </label>
+<br>    
+<button>Encrypt</button>
+</form>
+{% if output %}
+<div class="output">
+<h3>Encrypted Data</h3>
+<p>{{ output }}</p>
+<h3>Encrypted Key</h3>
+<p>{{ enc_key }}</p>
+</div>
+{% endif %}
+</body>
+</html>
